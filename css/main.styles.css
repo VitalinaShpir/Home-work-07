@@ -1,0 +1,249 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --dark-bg-color: #2e2f42;
+  --dark-bg-70-color: rgba(46, 47, 66, 0.7);
+  --dark-bg-40-color: rgba(46, 47, 66, 0.4);
+  --succes-100-color: #31d0aa;
+  --succes-75-color: rgba(49, 208, 170, 0.75);
+  --succes-50-color: rgba(49, 208, 170, 0.5);
+  --succes-10-color: rgba(49, 208, 170, 0.1);
+  --main-text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-bg-color: #f4f4fd;
+  --primary-bg-color: #e5e5e5;
+  --white-color: #ffffff;
+  --modal-background-color: #fcfcfc;
+
+  /* Animation */
+  --transition-effect: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* |============================
+| GENERAL STYLES
+|============================ */
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--dark-bg-color);
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    min-width: 320px;
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid salmon;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid green;
+  }
+}
+
+/* |============================
+| HEADER STYLES
+|============================ */
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  display: flex;
+  margin-right: 76px;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.accent-logo {
+  color: var(--primary-brand-color);
+}
+.logo-hd {
+  color: var(--dark-bg-color);
+}
+
+.navigation-list,
+.contacts {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--dark-bg-color);
+  }
+
+  .contacts {
+    display: inline;
+  }
+  .contacts-item:nth-child(1) {
+    margin-bottom: 4px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation-list {
+    display: flex;
+    text-align: center;
+    gap: 40px;
+  }
+  .navigation-list .links.current {
+    color: var(--pressed-state-color);
+  }
+  .navigation-list .links:active {
+    color: var(--pressed-state-color);
+  }
+  .links {
+    position: relative;
+    display: block;
+  }
+  .links.current::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--pressed-state-color);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -28px;
+  }
+}
+
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.mobile-menu-icon {
+  stroke: var(--dark-bg-color);
+}
+.head-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--accent-color);
+}
+/**
+|============================
+| HERO SECTION STYLES
+|============================
+*/
+
+/**
+|============================
+| BENEFITS SECTION STYLES
+|============================
+*/
+
+/**
+|============================
+| TASKS SECTION STYLES
+|============================
+*/
+
+/* @media screen and (max-width: 1199px) {
+.tasks {
+display: none;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.tasks {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+.section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+text-align: center;
+text-transform: capitalize;
+color: var(--dark-bg-color);
+margin: 0px 0px 72px 0px;
+padding: 0px;
+}
+.tasks-list {
+display: flex;
+gap: 24px;
+}
+.img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+} */
+
+/**
+|============================
+| TEAM SECTION STYLES
+|============================
+*/
+
+/**
+|============================
+| CUSTOMERS SECTION STYLES
+|============================
+*/
+
+/**
+|============================
+| FOOTER SECTION STYLES
+|============================
+*/
+.logo-ft {
+  color: var(--light-bg-color);
+}
+
+/**
+|============================
+| MODAL WINDOW  STYLES
+|============================
+*/

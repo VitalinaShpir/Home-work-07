@@ -21,17 +21,17 @@
     />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+
+    <link rel="stylesheet" href="./css/main.styles.css" />
   </head>
   <body>
-
-
     <!-- /**
      |============================
      |   Page header 
      |============================
    */ -->
-
 
     <header class="header">
       <div class="container head-container">
@@ -55,20 +55,23 @@
             ><a class="links contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li
           >
         </ul>
+        <button type="button" class="mobile-menu-btn">
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./icons/sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+ 
       </div>
     </header>
 
     <!-- Main content -->
 
     <main>
-
-
       <!-- /**
         |============================
         |  Title section 
         |============================
       */ -->
-
 
       <section class="main-section">
         <div class="container">
@@ -77,13 +80,11 @@
         </div>
       </section>
 
-
       <!-- /**
        |============================
        |   Benefits section 
        |============================
      */ -->
-
 
       <section class="benefits">
         <div class="container">
@@ -141,13 +142,11 @@
         </div>
       </section>
 
-
       <!-- /**
       |============================
       |    Tasks section 
       |============================
     */ -->
-
 
       <section class="tasks">
         <div class="container">
@@ -166,13 +165,11 @@
         </div>
       </section>
 
-
       <!-- /**
        |============================
        |   Team section 
        |============================
      */ -->
-
 
       <section class="team">
         <div class="container">
@@ -328,13 +325,11 @@
         </div>
       </section>
 
-
-            <!-- /**
+      <!-- /**
        |============================
        |   Customers section 
        |============================
      */ -->
-
 
       <section class="customers">
         <div class="container">
@@ -381,13 +376,11 @@
       </section>
     </main>
 
-
     <!-- /**
       |============================
       |  Page footer 
       |============================
     */ -->
-
 
     <footer class="footer">
       <div class="container footer-container">
@@ -449,7 +442,6 @@
       </div>
     </footer>
 
-
     <!-- /**
       |============================
       | MODAL WINDOW
@@ -457,7 +449,6 @@
       |============================
     */ -->
 
-    
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
@@ -522,10 +513,15 @@
           ></textarea>
 
           <div class="checkbox-field">
-            <input type="checkbox" name="policy-accept" id="privacy-policy" class="user-policy visually-hidden" />
+            <input
+              type="checkbox"
+              name="policy-accept"
+              id="privacy-policy"
+              class="user-policy visually-hidden"
+            />
             <label for="privacy-policy" class="policy-accept-txt"
-                >I accept the terms and conditions of the &nbsp;
-                <a class="policy-link" href=""> Privacy Policy</a></label
+              >I accept the terms and conditions of the &nbsp;
+              <a class="policy-link" href=""> Privacy Policy</a></label
             ></div
           >
 
