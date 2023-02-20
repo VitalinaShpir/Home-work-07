@@ -291,6 +291,9 @@ h1, h2, h3, h4, h5, h6, p{ margin: 0;}
 */
 
 .team {
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--light-bg-color);
@@ -555,7 +558,7 @@ h1, h2, h3, h4, h5, h6, p{ margin: 0;}
 .footer-subscribe-container {
   margin-left: auto;
 }
-.subscribe-container {
+.tablet-container {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -597,6 +600,14 @@ h1, h2, h3, h4, h5, h6, p{ margin: 0;}
 .subscribe-btn:focus {
   background-color: var(--pressed-state-color);
   color: var(--white-color);
+}
+.subscribe-container{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer-media{
+  margin-bottom: 24px;
 }
 
 /**
