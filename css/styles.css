@@ -28,7 +28,15 @@ body {
   letter-spacing: 0.02em;
 }
 
-h1, h2, h3, h4, h5, h6, p{ margin: 0;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
 .header {
   font-family: Roboto, sans-serif;
@@ -40,7 +48,7 @@ h1, h2, h3, h4, h5, h6, p{ margin: 0;}
 .head-container {
   display: flex;
   justify-content: space-between;
-} 
+}
 
 .logo {
   font-family: 'Raleway';
@@ -64,7 +72,7 @@ h1, h2, h3, h4, h5, h6, p{ margin: 0;}
 .logo-ft {
   color: var(--light-bg-color);
 }
-.mobile-menu-btn{
+.mobile-menu-btn {
   display: none;
 }
 .navigation {
@@ -145,6 +153,16 @@ h1, h2, h3, h4, h5, h6, p{ margin: 0;}
   padding-bottom: 188px;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .main-section {
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images-adaptive/bgi-desktop@2x.jpg);
+    background-size: 1440px 603px;
+  }
+}
+
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -213,7 +231,7 @@ h1, h2, h3, h4, h5, h6, p{ margin: 0;}
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.mobile-menu{
+.mobile-menu {
   display: none;
 }
 
@@ -604,12 +622,12 @@ h1, h2, h3, h4, h5, h6, p{ margin: 0;}
   background-color: var(--pressed-state-color);
   color: var(--white-color);
 }
-.subscribe-container{
+.subscribe-container {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.footer-media{
+.footer-media {
   margin-bottom: 24px;
 }
 
@@ -756,8 +774,8 @@ h1, h2, h3, h4, h5, h6, p{ margin: 0;}
   outline: none;
   border-color: var(--primary-brand-color);
 }
-.contact-form-message::placeholder{
-color: rgba(117, 117, 117, 0.5);
+.contact-form-message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 .policy-link {
   color: var(--primary-brand-color);
@@ -794,7 +812,7 @@ color: rgba(117, 117, 117, 0.5);
 .contact-form-input:focus + .modal-contact-icon {
   fill: var(--primary-brand-color);
 }
-.policy-accept-txt::before{
+.policy-accept-txt::before {
   content: '';
   display: block;
   width: 16px;
@@ -804,9 +822,9 @@ color: rgba(117, 117, 117, 0.5);
   border-radius: 2px;
   cursor: pointer;
 
-  transition: background-color var(--transition-effect), background-image var(--transition-effect)
+  transition: background-color var(--transition-effect), background-image var(--transition-effect);
 }
-.user-policy:checked + .policy-accept-txt::before{
+.user-policy:checked + .policy-accept-txt::before {
   background-color: var(--pressed-state-color);
   background-image: url(../icons/click.svg);
   background-repeat: no-repeat;
