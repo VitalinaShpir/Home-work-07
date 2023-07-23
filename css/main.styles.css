@@ -1026,3 +1026,127 @@ p {
   border: 1.25px solid var(--pressed-state-color);
   border-radius: 2px;
 }
+
+
+/**
+  |============================
+  | PORTFOLIO PAGE
+  |============================
+*/
+.main-filter-btn {
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  padding: 12px 24px;
+  transition: background-color var(--transition-effect), color var(--transition-effect),
+    border var(--transition-effect), box-shadow var(--transition-effect);
+}
+.filter-btn {
+  background: var(--light-bg-color);
+  border: 1px solid var(--accent-color);
+  color: var(--pressed-state-color);
+  padding: 12px 24px;
+  transition: background-color var(--transition-effect), color var(--transition-effect),
+    border var(--transition-effect), box-shadow var(--transition-effect);
+}
+
+.main-filter-btn:hover,
+.main-filter-btn:focus,
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-color);
+  border: 0.5px solid var(--light-bg-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding-top: 56px;
+    padding-bottom: 120px;
+  }
+
+  .btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 56px;
+  }
+
+  .projects-list {
+    display: flex;
+   flex-direction: column;
+   gap: 24px;
+  }
+    
+}
+
+
+.overlay-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.overlay-txt {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-bg-color);
+  background-color: var(--primary-brand-color);
+  padding: 40px 32px 164px 32px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  transform: translateY(100%);
+  transition: transform var(--transition-effect);
+}
+.project-link:hover .overlay-txt,
+.project-link:focus .overlay-txt {
+  transform: translateY(0);
+}
+
+.project-txt {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  overflow: hidden;
+}
+.project-link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow var(--transition-effect);
+}
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-top: none;}
+
+
+@media screen and (min-width: 768px){
+  .portfolio {
+    padding-top: 56px;
+    padding-bottom: 120px;
+  }
+  .btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 50px;
+  }
+
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

@@ -21,7 +21,9 @@
     />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" media="(min-width: 1157px)" />
+
+    <link rel="stylesheet" href="./css/main.styles.css" media="(max-width: 1199px)" />
   </head>
   <body>
     <!-- Page header -->
@@ -49,8 +51,72 @@
             ><a class="links contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li
           >
         </ul>
+
+        <button data-menu-open type="button" class="mobile-menu-btn">
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./icons/sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <div class="mobile-menu" data-menu>
+      <button data-menu-close type="button" class="mobile-menu-btn-close modal-close-btn">
+        <svg class="modal-close-btn-icon" width="8" height="8">
+          <use href="./icons/sprite.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item"><a class="links" href="./index.html">Studio</a></li>
+        <li class="mobile-menu-item"><a class="links" href="./portfolio.html">Portfolio</a></li>
+        <li class="mobile-menu-item"><a class="links active" href="">Contacts</a></li>
+      </ul>
+<div>
+
+  <ul class="mobile-menu-contacts list">
+    <li class="mobile-menu-phone-item"
+          ><a class="links phone-menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li
+        >
+        <li class="mobile-menu-mail-item"
+          ><a class="links mail-menu-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          ></li
+        >
+      </ul>
+
+      <ul class="mobile-menu-social-list list">
+        <li class="social-list-item">
+          <a class="social-list-link" href="">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./icons/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-list-link" href="">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./icons/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-list-link" href="">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./icons/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-list-link" href="">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./icons/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
     <main>
       <!-- Main content -->
       <section class="portfolio">
@@ -309,5 +375,8 @@
         </div>
       </div>
     </footer>
+
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
